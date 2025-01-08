@@ -24,6 +24,23 @@ example:
 bash ./delete-image.sh my_image
 ```
 
+### How to get image stored in the registry :
+```bash
+curl -u registry-username:registry-password --location --request GET 'https://registry-url:5000/v2/_catalog'
+```
+you will get something like :
+```json
+{
+    "repositories": [
+        "my_image",
+        "my_image2",
+        ....
+    ]
+}
+```
+
+
+
 ## Delete all images :
 /!\ Be careful, this will delete all images in the registry for the eternity /!\
 ```bash
