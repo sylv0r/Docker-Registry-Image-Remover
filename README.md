@@ -16,17 +16,17 @@ Run the script in the server where the registry container is running.
 
 ## Delete a single image :
 ```bash
-./delete_image.sh <image_name>
+bash ./delete-image.sh <image_name>
 ```
 
 example:
 ```bash
-./delete_image.sh my_image
+bash ./delete-image.sh my_image
 ```
 
 ## Delete all images :
 /!\ Be careful, this will delete all images in the registry for the eternity /!\
 ```bash
-./delete_all_images.sh
+bash ./delete-all-images.sh
 ```
 
